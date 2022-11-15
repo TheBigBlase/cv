@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Maxime Resume/CV
+% LaTeX Template
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% maxime paulin (maxi.paulin@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+%\begin{flushright}
+% Comment out this figure block if you don't want a photo
+%\includegraphics[width=0.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+\footnotesize % Smaller font size
+\textbf{Contact info} \\
+\url{maxi.paulin@gmail.com} \\ % Your email address
+GitHub : \url{@thebigblase}\\
+(+33) 6 28 36 58 69 \\ % Your phone number
+\Sep \\% Some whitespace
+\textbf{Address} \\
+69 rue des petits filoux \\ % Address 1
+74000 Annecy \\ % Address 2
+%France \\ % Address 3
+\vfill % Whitespace under this block to push it up under the photo
+%\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Maxime Paulin} % Large heading - your name
+
+\cvsubheading{Junior Software Engineer} % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+\normalsize
+\aboutme{About Me}{I am a 21 years old student striving to work in a fast paced 
+environement. I have a strong interest in cybersecurity, as well as low level 
+developpement, as in operating system }
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem{2016 - 2019, Lycée Xavier Marmier}{High school diploma, Scientific division}
+
+%------------------------------------------------
+
+\CVItem{2019 - 2021, Lycée Victor Hugo}{French Preparitory class, Mathematics speciality}
+
+%------------------------------------------------
+
+\CVItem{2021 - 2024, Polytech Annecy}{Engineering School, Data Science and Software
+Engineering}
+
+%----------------------------------------------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+%------------------------------------------------
+
+\CVItem{Summers 2018, 2019, 2020 \textit{Maintenance team in industry}, PréciJura}
+{
+	Learned how to maintain tools and equipement, as well as soldering and using a metal 
+	turning lathe.
+}
+
+%------------------------------------------------
+
+\CVItem{Summer 2022, \textit{Search Engine Optimization}, BIWA}
+{
+	\begin{itemize}
+		\item{Learned to use search optimization tools}
+		\item{Learned to communicate effectively with the team}
+		\item{
+				Learned to adapt to new tools, and discovering the people using them, instead
+				of developping them, contrasting my education
+		}
+	\end{itemize}
+}
+
+%------------------------------------------------
+
+%\Sep % Extra whitespace after the end of a major section
+%
+%%----------------------------------------------------------------------------------------
+%%	COMMUNICATION SKILLS
+%%----------------------------------------------------------------------------------------
+%
+%\CVSection{Communication Skills}
+%
+%%------------------------------------------------
+%
+%\CVItem{2015, \textit{Oral Presentation}, California Business Conference}{Presented research I conducted for my Masters of Engineering degree.}
+%
+%%------------------------------------------------
+%
+%\CVItem{2014, \textit{Poster}, Annual Business Conference (Oregon)}{As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
+%
+%%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Skills}
+
+%------------------------------------------------
+
+\CVItem{Programming Skills}{
+	\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+		\bluebullet C/C++ &  \bluebullet POSIX shells & \bluebullet Node : JS / TS\\
+		\bluebullet  Python &  \bluebullet Java & \bluebullet SVC : git\\
+		\bluebullet  Linux &  \bluebullet SQL / NoSQL & \bluebullet CTF: PenTest\\
+\end{tabular}}
+
+%------------------------------------------------
+
+\CVItem{Languages}{
+\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.21\textwidth}}
+	\bluebullet \textbf{French}: \small{native}  &  
+	\bluebullet \textbf{English}: \small{fluent: C1} & 
+	\bluebullet \textbf{German}: \small{casual: B1}\\
+\end{tabular}
+}
+
+%------------------------------------------------
+
+\SmallSep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	NEW PAGE DELIMITER
+%	Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+%
+%\userinformation % Print your information in the left column
+%
+%\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Projects}
+
+%------------------------------------------------
+
+\CVItem{2019, \textit{Discord bot}}{
+	Bot for checking that everyone is present during quarantine, sparing the teacher some 
+	precious time.\\
+	\url{https://github.com/storca/vhbot}
+}
+
+%------------------------------------------------
+
+\CVItem{2021, \textit{Kr00k CVE}}{
+	Proof of concept Kr00k vulnerability script written in python.\\
+	\url{https://github.com/thebigblase/kr00k}
+}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Personnal Interests}
+
+%------------------------------------------------
+\begin{tabular}{p{0.4\textwidth} p{0.2\textwidth}}
+	\CVItem{Tech related}{
+		\begin{itemize}
+			\item Low level programming 
+			\item embeded systems 
+			\item repairing old equipement 
+		\end{itemize}
+	} &
+
+%------------------------------------------------
+
+\CVItem{Other}{
+	\begin{itemize}
+		\item	Music 
+		\item Guitar
+		\item Cooking
+	\end{itemize}
+		}\\
+\end{tabular}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
