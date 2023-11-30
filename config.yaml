@@ -1,0 +1,91 @@
+contacts:
+  name: Violette Paulin
+  title: Software Engineer
+  email: "violette@bigblase.xyz"
+  website: "bigblase.xyz"
+  nationality: French
+  github: "https://github.com/thebigblase/"
+
+skills:
+  - name: Programming Languages
+    items:
+      - C / C++
+      - Rust
+      - Python
+      - Shell Scripting
+      - JavaScript / TypeScript
+      - Java
+  - name: Software Development
+    items:
+      - Agile
+      - Scrum
+      - Design Patterns
+      - Git
+  - name: Data Analysis
+    items:
+      - Data Visualization
+      - Statistics
+  - name: System Development
+    items:
+      - Embeded
+      - Distributed Systems
+      - BSD / Linux
+  - name: Database Management
+    items:
+      - noSQL
+      - SQL
+      - Blockchain
+  - name: Web Development
+    items:
+      - HTML/CSS
+      - Node.js
+      - Vue.js
+
+jobs:
+  - position: R & D engineer
+    company:
+      name: LISTIC Annecy
+      link: https://www.univ-smb.fr/listic/en/
+    description:
+      - Building a distributed caching system, and storing logs within
+        a Blockchain 
+      - Internship in a informatic research laboratory
+      - Suppervised by \#link(https://github.com)
+    from: "2023 May."
+    to: "2023 Aug."
+    tags:
+      - Distributed System design
+      - Blockchain Programming
+      - Self teaching
+  
+education:
+  - university:
+      name: Polytech Annecy Chambéry
+      link: "https://www.polytech.univ-smb.fr/"
+    degree: "M.Sc."
+    major:
+      Computer Science
+    track:
+      Informatic Data Usage
+    from: "2021"
+    to: "Current"
+  - university:
+      name: Sherbrooke University 
+      link: "https://usherbrooke.ca"
+    degree: "M.Sc."
+    major:
+      Computer Science
+    track: "None"
+    from: "2015"
+    to: "2018"
+
+hackathons:
+  - hackathon:
+      name: Tech Innovators Hackathon
+      link: "https://techinnovatorshackathon.com/"
+    certificate_link: "https://techinnovatorshackathon.com/certificates/johndoe"
+    description: >
+      Developed an innovative data analysis tool that improved data processing and insights generation for businesses.
+    year: 2023
+    from: "Feb. 1"
+    to: "Feb. 7"
