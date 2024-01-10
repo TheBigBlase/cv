@@ -14,12 +14,9 @@ skills:
       - Python
       - Shell Scripting
       - JavaScript / TypeScript
-      - Java
   - name: Software Development
     items:
       - Agile
-      - Scrum
-      - Design Patterns
       - Git
   - name: Data Analysis
     items:
@@ -29,7 +26,7 @@ skills:
     items:
       - Embeded
       - Distributed Systems
-      - BSD / Linux
+      - BSD / Linux / Unix like
   - name: Database Management
     items:
       - noSQL
@@ -39,6 +36,7 @@ skills:
     items:
       - HTML/CSS
       - Node.js
+      - rocket.rs
       - Vue.js
 
 jobs:
@@ -50,12 +48,14 @@ jobs:
       - Building a distributed caching system, and storing logs within
         a Blockchain 
       - Internship in a informatic research laboratory
-      - Suppervised by \#link(https://github.com)
+      - Suppervised by Sébastien Monnet & Kavé Salamatian
     from: "2023 May."
     to: "2023 Aug."
     tags:
       - Distributed System design
       - Blockchain Programming
+      - Web programming
+        - backend & frontend
       - Self teaching
   
 education:
@@ -76,16 +76,37 @@ education:
     major:
       Computer Science
     track: "None"
-    from: "2015"
-    to: "2018"
+    from: "2023"
+    to: "Current"
 
-hackathons:
-  - hackathon:
-      name: Tech Innovators Hackathon
-      link: "https://techinnovatorshackathon.com/"
-    certificate_link: "https://techinnovatorshackathon.com/certificates/johndoe"
-    description: >
-      Developed an innovative data analysis tool that improved data processing and insights generation for businesses.
-    year: 2023
-    from: "Feb. 1"
-    to: "Feb. 7"
+projects:
+  personnal:
+    - main:
+        name: Discsord Bot
+        link: "https://github.com/storca/vhbot"
+      description: >
+        Discord bot designed with a classmate. The goal was to make life easier during quarantine for our teachers with functionnality such as making a list of persons attending class, a feature to ask question during class & indicating begin and end of class times.
+      year: 2020
+    - main:
+        name: kr00k
+        link: "https://github.com/thebigblase/kr00k"
+      description: >
+          PoC scripts to show the kr00k vulnerability (CVE-2019-15126). Part of a school projects
+      year: 2021
+  school:
+    - main:
+        name: DHTea
+        link: "https://github.com/phoqueEberlue/DHTea"
+      description: >
+          basic Distributed Hash Table written in rust. It was part of a distributed system class in IDU, Polytech Annecy.
+      year: 2023
+
+hobbies:
+  tech:
+    - kernel dev
+    - low level-ish dev
+    - resurecting old tech
+  other:
+    - cooking
+    - playing the guitar
+    - music

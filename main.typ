@@ -29,8 +29,8 @@
       #if (config.contacts.at("linkedin", default:false)) {
         [LinkedIn: #link(config.contacts.linkedin)[mikhail-liamets]\ ] 
       }
-      GitHub: #link(config.contacts.github)[caffeintazedgaze] \
-      Website: #link(config.contacts.website)[caffeintazedgaze] \
+      GitHub: #link(config.contacts.github)[thebigblase] \
+      Website: #link(config.contacts.website)[bigblase.xyz] \
       
 
       #if (settings.public) {
@@ -49,7 +49,7 @@
     )
     A *software engineer* with a confident grasp of *infrastructure*, *system design*, and *DevOps*, now seeking opportunities to excel in the realms of solution architecture.
 
-    Open to roles ranging from *software engineering* to *DevOps/SRE*.
+    Open to roles ranging from *software engineering* to *DevOps*.
   ]
 
   = Skills
@@ -125,7 +125,7 @@
     ]
   }
 
-  = Experience
+  = Revelant Experience
 
   #{
     for job in config.jobs [
@@ -171,10 +171,10 @@
 
 
 
-  = Hackathons
+  = Personnal Projects
 
   #{
-    for hack in config.hackathons [
+    for project in config.projects.personnal [
       #par(
         justify: true,
         leading: eval(settings.paragraph.leading)
@@ -184,20 +184,89 @@
             size: eval(settings.font.size.heading),
             font: settings.font.general
           )
-          - #hack.year #hack.from – #hack.to \
-            #link(hack.hackathon.link)[#hack.hackathon.name] – #link(hack.certificate_link)[Credential]
+		  #project.year --
+		  #if (project.at("from", default: "") != "" and  project.at("to", default: "") != "") {
+            [ #project.from – #project.to]
+		  }
+          #link(project.main.link)[#project.main.name]
         ]
         #par[
           #set text(
             size: eval(settings.font.size.description),
             font: settings.font.general
           )
-          #hack.description
+          #project.description
         ]
       ]
     ]
   }
+
+  = School related Projects
+
+  #{
+    for project in config.projects.school [
+      #par(
+        justify: true,
+        leading: eval(settings.paragraph.leading)
+      )[
+        #par[
+          #set text(
+            size: eval(settings.font.size.heading),
+            font: settings.font.general
+          )
+		  #project.year --
+		  #if (project.at("from", default: "") != "" and  project.at("to", default: "") != "") {
+            [ #project.from – #project.to]
+		  }
+          #link(project.main.link)[#project.main.name]
+        ]
+        #par[
+          #set text(
+            size: eval(settings.font.size.description),
+            font: settings.font.general
+          )
+          #project.description
+        ]
+      ]
+    ]
+  }
+
+  = Hobies
+  #{
+        grid(
+		  columns: (1fr, 1fr),
+		  gutter: 50pt,
+		  for hob in config.hobbies.tech [
+		    #par(
+		  	justify: true,
+		  	leading: eval(settings.paragraph.leading)
+		    )[
+
+          #set text(
+            size: eval(settings.font.size.heading),
+            font: settings.font.general
+          )
+		  •  #hob
+        ]
+      ],
+for hob in config.hobbies.other [
+		    #par(
+		  	justify: true,
+		  	leading: eval(settings.paragraph.leading)
+		    )[
+
+          #set text(
+            size: eval(settings.font.size.heading),
+            font: settings.font.general
+          )
+		  • #hob
+        ]
+      ])
+
+
+  }
 ]}
+
 
 #{
   grid(
