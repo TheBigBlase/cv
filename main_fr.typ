@@ -199,7 +199,7 @@
 
 
 
-  = Notable Personnal Projects
+  = Projets personnels remarquables
   #{
     for project in config.projects.personnal [
       #par(
