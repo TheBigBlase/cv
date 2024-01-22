@@ -88,12 +88,19 @@ projects:
         Discord bot designed with a classmate. The goal was to make life easier during quarantine for our teachers with functionnality such as making a list of persons attending class, a feature to ask question during class & indicating begin and end of class times.
       year: 2020
     - main:
+        name: Caramell
+        link: "https://github.com/thebigblase/caramell"
+      description: >
+        Plateform offering to cache data efficiently and sotrring logs in a blockchain. Developped under the supervision of M. Salamatian and M. Monnet during my time at LISTIC.
+      year: 2023
+
+  school:
+    - main:
         name: kr00k
         link: "https://github.com/thebigblase/kr00k"
       description: >
           PoC scripts to show the kr00k vulnerability (CVE-2019-15126). Part of a school projects
       year: 2021
-  school:
     - main:
         name: DHTea
         link: "https://github.com/phoqueEberlue/DHTea"

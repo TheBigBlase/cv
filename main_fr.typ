@@ -1,6 +1,6 @@
-#let config = yaml("config.yaml")
-#let settings = yaml("settings.yaml")
-#let personnal = yaml("personnal.yaml")
+#let config = yaml("config_fr.yaml")
+#let settings = yaml("settings_fr.yaml")
+#let personnal = yaml("personnal_fr.yaml")
 
 #show link: set text(blue)
 
@@ -37,22 +37,21 @@
         personnal.contacts.address
       }
     ]
-    #line(length: 100%)
+    #line(length: 100%, stroke: blue + 0.5pt)
   ]
 
-  = Summary
+  = Pour faire simple
 
   #par[
     #set text(
         eval(settings.font.size.education_description),
         font: settings.font.minor_highlight,
     )
-    A *software engineer* with a confident grasp of *infrastructure*, *system design*, and *DevOps*, now seeking opportunities to excel in the realms of solution architecture.
 
-    Open to roles ranging from *software engineering* to *DevOps*.
+
   ]
 
-  = Skills
+  = Compétences
 
   #{
     for skill in config.skills [
@@ -61,7 +60,6 @@
           size: eval(settings.font.size.description),
         )
         #set text(
-          // size: eval(settings.font.size.tags),
           font: settings.font.minor_highlight,
         )
         *#skill.name* 
@@ -69,6 +67,36 @@
         #skill.items.join(" • ")
       ]
     ]
+  }
+
+  #line(length: 100%, stroke: blue + 0.5pt)
+
+  = Hobbies
+  #{
+	par(
+	  justify: true,
+	  leading: eval(settings.paragraph.leading)
+	)[
+	  #set text(
+		size: eval(settings.font.size.tags),
+		font: settings.font.general
+	  )
+
+	  #config.hobbies.tech.join(" • ")
+	]
+
+	par(
+	  justify: true,
+	  leading: eval(settings.paragraph.leading)
+	)[
+	  #set text(
+		size: eval(settings.font.size.tags),
+		font: settings.font.general
+	  )
+  
+	  #config.hobbies.other.join(" • ")
+	]
+
   }
 ]}
 
@@ -100,32 +128,32 @@
   ]
 
 
-  = Education
+  = Etudes
 
   #{
     for place in config.education [
-        #par[
-          #set text(
-            size: eval(settings.font.size.heading),
-            font: settings.font.general
-          )
-            #place.from – #place.to \
-            #link(place.university.link)[#place.university.name]
-        ]
-        #par[
-          #set text(
-            eval(settings.font.size.education_description),
-            font: settings.font.minor_highlight,
-          )
-          #place.degree #place.major \
-          #if (place.at("track") != "None"){
-            [#place.track]
-          }
-        ]
+	  #par[
+	    #set text(
+	  	size: eval(settings.font.size.heading),
+	  	  font: settings.font.general
+	    )
+	  	#place.from – #place.to \
+	  	#link(place.university.link)[#place.university.name]
+	  ]
+	  #par[
+	    #set text(
+	  	  eval(settings.font.size.education_description),
+	  	  font: settings.font.minor_highlight,
+	    )
+	    #place.degree #place.major \
+	    #if (place.at("track") != "None"){
+	  	  [#place.track]
+	    }
+	  ]
     ]
   }
 
-  = Revelant Experience
+  = Expérience utile
 
   #{
     for job in config.jobs [
@@ -229,49 +257,14 @@
       ]
     ]
   }
-
-  = Hobies
-  #{
-        grid(
-		  columns: (1fr, 1fr),
-		  gutter: 50pt,
-		  for hob in config.hobbies.tech [
-		    #par(
-		  	justify: true,
-		  	leading: eval(settings.paragraph.leading)
-		    )[
-
-          #set text(
-            size: eval(settings.font.size.heading),
-            font: settings.font.general
-          )
-		  •  #hob
-        ]
-      ],
-for hob in config.hobbies.other [
-		    #par(
-		  	justify: true,
-		  	leading: eval(settings.paragraph.leading)
-		    )[
-
-          #set text(
-            size: eval(settings.font.size.heading),
-            font: settings.font.general
-          )
-		  • #hob
-        ]
-      ])
-
-
-  }
 ]}
 
+  #{
+    grid(
+      columns: (2fr, 5fr),
+      column-gutter: 3em,
+      sidebarSection,
+      mainSection,
+    )
+  }
 
-#{
-  grid(
-    columns: (2fr, 5fr),
-    column-gutter: 3em,
-    sidebarSection,
-    mainSection,
-  )
-}

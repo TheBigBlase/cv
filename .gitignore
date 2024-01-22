@@ -3,3 +3,5 @@
 *.log
 *private*
 personnal.yaml
+personnal_fr.yaml
+*.pdf

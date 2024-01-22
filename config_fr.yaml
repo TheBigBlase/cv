@@ -1,0 +1,128 @@
+contacts:
+  name: Violette Paulin
+  title: Developpeuse
+  email: "violette@bigblase.xyz"
+  website: "bigblase.xyz"
+  nationality: French
+  github: "https://github.com/thebigblase/"
+
+skills:
+  - name: Langages de programmation
+    items:
+      - C / C++
+      - Rust
+      - Python
+      - Shell Scripting
+      - JavaScript / TypeScript
+  - name: Software Development
+    items:
+      - Agile
+      - Git
+      - CI
+  - name: Analyse de données
+    items:
+      - Visualisations de données
+      - Statistiques
+  - name: Systèmes
+    items:
+      - Systèmes embarqués
+      - Systèmes distribués
+      - BSD / Linux / Unix like
+  - name: Database Management
+    items:
+      - noSQL
+      - SQL
+      - Blockchain
+  - name: Web Development
+    items:
+      - HTML/CSS
+      - Node.js
+      - rocket.rs
+      - Vue.js
+
+jobs:
+  - position: "Stage : Ingénieur R & D"
+    company:
+      name: LISTIC Annecy
+      link: https://www.univ-smb.fr/listic/en/
+    description:
+      - Design et implémentation d'un système de cache avec blockchain
+      - Stage effectué dans un laboratoire d'informatique
+      - Stage supervisé by Sébastien Monnet & Kavé Salamatian
+    from: "Mai 2023"
+    to: "Aug 2023"
+    tags:
+      - Design de système distribué
+      - Programmation de blockchain
+      - Interface web
+        - Backend & Frontend
+      - Autonomie
+  
+education:
+  - university:
+      name: Lycée Victor Hugo (Besançon)
+      link: "https://lyceehugobesancon.org"
+    degree: "Classe préparatoire aux grandes écoles"
+    major: • Maths Physique
+    track: None
+    from: 2019
+    to: 2021
+
+  - university:
+      name: Polytech Annecy Chambéry
+      link: "https://www.polytech.univ-smb.fr/"
+    degree: "Maitrise"
+    major:
+      Informatique
+    track:
+      Informatique Données Usage
+    from: "2021"
+    to: "Aujourd'hui"
+  - university:
+      name: Université de Sherbrooke
+      link: "https://usherbrooke.ca"
+    degree: "Maitrise"
+    major:
+     d'informatique
+    track: None
+    from: "2023"
+    to: "Aujourd'hui"
+
+projects:
+  personnal:
+    - main:
+        name: Bot Discsord
+        link: "https://github.com/storca/vhbot"
+      description: >
+        Bot discord utilisé pendant le confinement en France. Il peut faire une liste d'appel, ajoute une fonction "lève la main" (similaire à Teams aujourd'hui) et imite la sonnerie à la fin de la classe. Il dispose aussi d'un module pour faire de l'arithmétique simple, et souhaite les anniversaires aux professeurs. Il a été écrit en Python, en équipe avec un camarade de classe.
+      year: 2020
+    - main:
+        name: Caramell
+        link: "https://github.com/thebigblase/caramell"
+      description: >
+        Projet du stage de 2023. Il permet de stocker des journaux dans une blockchain et cache des données avec une grande efficacité. Il est écrit en Rust, et Node.js pour certaines interfaces utilisateurs. J'ai travaillé seule dessus, mes encadrants relisaient le travail à chaque grande étape.
+      year: 2023
+
+  school:
+    - main:
+        name: kr00k
+        link: "https://github.com/thebigblase/kr00k"
+      description: >
+          Scripts de preuves de concept pour la faille Kr00k (CVE-2019-15126). Travail final pour mon TIPE de MPSI.
+      year: 2021
+    - main:
+        name: DHTea
+        link: "https://github.com/phoqueEberlue/DHTea"
+      description: >
+          Table de hash distribuée écrite in Rust. Je l'ai écrit seule. Un équipier m'a aidée pour la fondation, et a écrit un script pour la simuler en python.
+      year: 2023
+
+hobbies:
+  tech:
+    - kernel dev
+    - low level-ish dev
+    - réssuciter des vieux objets électronique
+  other:
+    - cuisine
+    - jouer de la guitare
+    - musique (jazz / blues)
